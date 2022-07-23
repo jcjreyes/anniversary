@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300&display=swap');
+
 * {
     box-sizing: border-box;   
 }
@@ -10,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 	width: 100%;
+    font-family: 'Nunito', sans-serif;
 }
 
 .container {
@@ -20,20 +23,32 @@ body {
         "list list list";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 1fr;
+    grid-gap: 1rem;
     height: 400px;
-    width: 1000px;
-    padding: 2rem;
+    width: 800px;
+    padding: 1.5rem;
     background-color: #1E1E2E;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 img {
     grid-area: pic;
     margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
 }
 
 .introduction {
     grid-area: time;
+    margin: auto;
+    text-align: center;
+}
+
+#time-amount {
+    display: flex;
+    gap: 1rem;
 }
 
 .months {
@@ -46,8 +61,27 @@ ul {
     padding: 0;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 li {
-    display: inline;
+    text-decoration: none;
+    color: #F5BDE6;
+    cursor: pointer;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.25s cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+
+a {
+    text-decoration: none;
+    color: #F5BDE6;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgba(245, 224, 220, 0.6);
+}
+
+li:hover {
+    transform: scale(1.25);
 }
