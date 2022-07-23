@@ -5,4 +5,49 @@
 body {
     background-color: #494D64;
     color: #F5BDE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "pic time time"
+        "pic time time"
+        "list list list";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    height: 400px;
+    width: 1000px;
+    padding: 2rem;
+    background-color: #1E1E2E;
+    border-radius: 1rem;
+}
+
+img {
+    grid-area: pic;
+    margin: auto;
+}
+
+.introduction {
+    grid-area: time;
+}
+
+.months {
+    grid-area: list;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    display: inline;
 }
