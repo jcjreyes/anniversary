@@ -63,6 +63,10 @@ img {
     }
 
     img {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        z-index: 5;
         left: 50%;
         top: 20%;
         transform: translate(-50%, -50%);
