@@ -43,16 +43,28 @@ body {
 }
 
 img {
-z-index: 5;
+  z-index: 5;
   position: absolute;
   width: 400px;
   height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-    transition: ease 1s;
+  transition: ease 1s;
 }
 
 .container:hover ~ img {
   transform: translate(-600px, -100px);
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .poem {
+        font-size: 1.5rem;
+    }
+
+    img {
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+    }
 }
