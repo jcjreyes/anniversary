@@ -1,5 +1,5 @@
 const annivTimer = () => {
-    let firstDay = new Date(2021, 6, 28, 12, 00);
+    let firstDay = new Date(2021, 6, 28, 00, 00);
     let timeElapsed = new Date() - firstDay;
     let days = Math.floor(timeElapsed / 1000 / 60 / 60 / 24);
     let hours = Math.floor(timeElapsed / 1000 / 60 / 60 % 24);
